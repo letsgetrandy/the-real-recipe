@@ -4,6 +4,7 @@ const selectors = [
     'div[itemtype="http://schema.org/Recipe"]',
     'div[data-recipe-id]',
     '.recipe-details-container',
+    '.recipe-callout',
     '#recipe',
     '.recipe'
 ];

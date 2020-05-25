@@ -1,6 +1,6 @@
 {
   "name": "The Real Recipe",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifest_version": 2,
   "description": "Skip the long story and get straight to the recipe",
   "homepage_url": "http://example.com",
@@ -16,14 +16,11 @@
     ],
     "persistent": true
   },
-  "permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": [
-        "https://*/*"
+        "*://*/*"
       ],
       "css": [
         "src/inject/inject.css"
